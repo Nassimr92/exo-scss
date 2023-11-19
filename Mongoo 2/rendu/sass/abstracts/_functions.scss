@@ -1,0 +1,16 @@
+// This file is used to define SCSS functions
+
+// Function to calculate responsive font size
+@function calculate-responsive-font-size($target-size, $viewport-width) {
+  @return ($target-size / $viewport-width) * 1vw;
+}
+
+// Function to lighten a color
+@function lighten-color($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+
+// Function to darken a color
+@function darken-color($color, $percentage) {
+  @return darken($color, $percentage);
+}

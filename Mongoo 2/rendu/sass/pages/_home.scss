@@ -1,0 +1,40 @@
+// Home page styles
+
+// Hero section
+.hero {
+  height: 100vh;
+  background: $primary-color;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+// Featured products
+.featured-products {
+  padding: 2rem 0;
+  background: $light-gray;
+
+  .product {
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: $dark-gray;
+    }
+
+    p {
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// This file is used to define different themes for the project.
+
+// Default theme
+$theme-default: (
+  primary: #007bff,
+  secondary: #6c757d,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f8f9fa,
+  dark: #343a40
+);
+
+// Dark theme
+$theme-dark: (
+  primary: #343a40,
+  secondary: #6c757d,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f8f9fa,
+  dark: #007bff
+);
+
+// Function to get color from theme
+@function theme-color($theme, $color-name) {
+  @return map-get($theme, $color-name);
+}
